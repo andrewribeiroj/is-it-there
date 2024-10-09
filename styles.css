@@ -48,7 +48,7 @@ a:hover {
   opacity: 1;
 }
 
-h1 {
+.whiteHeader {
   font-size: 3rem;
   font-weight: 700;
   color: #fff;

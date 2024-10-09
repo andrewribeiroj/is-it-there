@@ -1,7 +1,7 @@
-<?php include 'header.html'; ?>
+<?php include 'header.php'; ?>
 
         <div class="cover">
-            <h1>Let's check if it's there.</h1>
+            <h1 class="whiteHeader">Let's check if it's there.</h1>
             <form class="flex-form" method="post" action="result.php">
                 <input name="furl" type="text" placeholder="What's the URL to check?">
                 <textarea name="fcode" placeholder="Paste the wanted code here."></textarea>
