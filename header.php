@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="modal.css">
     <title>Is it there?</title>
@@ -30,23 +29,23 @@
             <h1>Checking if your piece of code is added</h1>
 
             <p>
-                <ol>
-                    <li>
-                        Add the URL of the website you wish to check in the first field;
-                    </li>
-                    <li>
-                        Paste the code you wish to check if added into the second field;
-                    </li>
-                    <li>
-                        Select the website part you wish to check (head/body);
-                    </li>
-                    <li>
-                        Select if you're looking for a perfect match or similar code;
-                    </li>
-                    <li>
-                        Press "check"!
-                    </li>
-                </ol>
+            <ol>
+                <li>
+                    Add the URL of the website you wish to check in the first field;
+                </li>
+                <li>
+                    Paste the code you wish to check if added into the second field;
+                </li>
+                <li>
+                    Select the website part you wish to check (head/body);
+                </li>
+                <li>
+                    Select if you're looking for a perfect match or similar code;
+                </li>
+                <li>
+                    Press "check"!
+                </li>
+            </ol>
             </p>
 
             <div class="modal__footer">
@@ -55,4 +54,26 @@
 
             <a href="#" class="modal__close">&times;</a>
         </div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h2><a href="/">Is it there?</a></h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#instructions">Open Instructions</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/andrewribeiroj/is-it-there" target="_blank" title="github">GitHub
+                            Repository</a>
+                    </li>
+                    <li>
+                        <a class="btn" title="newsletter" class="ml-onclick-form" href="javascript:void(0)"
+                            onclick="ml('show', 'tpJQuU', true)">Newsletter</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
     </div>
