@@ -51,7 +51,7 @@
             <a href="#" class="modal__close">&times;</a>
         </div>
     </div>
-    
+
     <div class="container">
         <header>
             <h2><a href="/">Is it there?</a></h2>
@@ -71,5 +71,5 @@
                 </ul>
             </nav>
         </header>
-        
+
     </div>

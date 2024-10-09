@@ -21,17 +21,15 @@
 
                     // Get the script to search for from the POST parameter
                     $searchCode = htmlspecialchars($_POST['fcode']); // valid script tag
-                    
 
-                    if($_POST['targetPart'] === "head") {
+
+                    if ($_POST['targetPart'] === "head") {
                         $targetPart = '/<head[^>]*>(.*?)<\/head>/si';
                     } else if ($_POST['targetPart'] === "body") {
                         $targetPart = '/<body[^>]*>(.*?)<\/body>/si';
                     } else {
                         $targetPart = '/<html[^>]*>(.*?)<\/html>/si';
                     }
-
-                    //echo $searchCode;
 
                     $content = @file_get_contents($url);
 
@@ -40,13 +38,13 @@
                     } else {
                         // Extract the content inside the <head> tags
                         if (preg_match($targetPart, $content, $matches)) {
-                            $headContent = $matches[1]; // Extracted content inside the <head> tag
-
+                            $websiteContent = $matches[1]; // Extracted content inside the <head> tag
+                            
                             $normalizedSearchCode = preg_replace('/\s+/', ' ', trim($searchCode));
-                            $normalizedHeadContent = preg_replace('/\s+/', ' ', $headContent);
+                            $normalizedWebsiteContent = preg_replace('/\s+/', ' ', $websiteContent);
 
                             // Check if the JavaScript code exists in the <head> section
-                            $pos = strpos(htmlspecialchars($normalizedHeadContent), trim($normalizedSearchCode));
+                            $pos = strpos(htmlspecialchars($normalizedWebsiteContent), trim($normalizedSearchCode));
 
                             if ($pos === false) {
                                 echo "It is NOT there... :(";
