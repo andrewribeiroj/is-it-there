@@ -55,6 +55,10 @@ a:hover {
   margin: 0 0 1.5rem;
 }
 
+.blackHeader {
+  color: #000;
+}
+
 i {
   font-size: 1.3rem;
 }

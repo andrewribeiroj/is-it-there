@@ -26,8 +26,7 @@
 <body>
     <div id="instructions" class="modal">
         <div class="modal__content">
-            <h1>Checking if your piece of code is added</h1>
-
+            <h1 class="blackHeader">Checking if your piece of code is added</h1>
             <p>
             <ol>
                 <li>
