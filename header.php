@@ -37,10 +37,7 @@
                     Paste the code you wish to check if added into the second field;
                 </li>
                 <li>
-                    Select the website part you wish to check (head/body);
-                </li>
-                <li>
-                    Select if you're looking for a perfect match or similar code;
+                    Select the website section you wish to check (head/body);
                 </li>
                 <li>
                     Press "check"!

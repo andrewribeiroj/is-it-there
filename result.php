@@ -21,6 +21,15 @@
 
                     // Get the script to search for from the POST parameter
                     $searchCode = htmlspecialchars($_POST['fcode']); // valid script tag
+                    
+
+                    if($_POST['targetPart'] === "head") {
+                        $targetPart = '/<head[^>]*>(.*?)<\/head>/si';
+                    } else if ($_POST['targetPart'] === "body") {
+                        $targetPart = '/<body[^>]*>(.*?)<\/body>/si';
+                    } else {
+                        $targetPart = '/<html[^>]*>(.*?)<\/html>/si';
+                    }
 
                     //echo $searchCode;
 
@@ -30,7 +39,7 @@
                         echo "Failed to retrieve the content. Please check the URL.";
                     } else {
                         // Extract the content inside the <head> tags
-                        if (preg_match('/<head[^>]*>(.*?)<\/head>/si', $content, $matches)) {
+                        if (preg_match($targetPart, $content, $matches)) {
                             $headContent = $matches[1]; // Extracted content inside the <head> tag
 
                             $normalizedSearchCode = preg_replace('/\s+/', ' ', trim($searchCode));

@@ -7,11 +7,11 @@
         <textarea name="fcode" placeholder="Paste the wanted code here."></textarea>
 
         <select name="targetPart" id="targetPart">
-            <option value="headPart">
+            <option value="head">
 
                 Check code in head section &darr;
             </option>
-            <option value="bodyPart">
+            <option value="body">
                 Check code in body section
             </option>
         </select>
